@@ -120,7 +120,7 @@
 
       Telegram.WebApp.expand();
 
-      Telegram.WebApp.setViewportHeight(1);
+      //   Telegram.WebApp.setViewportHeight(1);
 
       // Event occurs whenever theme settings are changed in the user's Telegram app (including switching to night mode).
       Telegram.WebApp.onEvent("themeChanged", function () {
@@ -172,13 +172,6 @@
           Telegram.WebApp.SettingsButton.hide();
         } else {
           Telegram.WebApp.SettingsButton.show();
-        }
-      }
-      function toggleHapticFeedback() {
-        if (Telegram.WebApp.HapticFeedback.isVisible) {
-          Telegram.WebApp.HapticFeedback.hide();
-        } else {
-          Telegram.WebApp.HapticFeedback.show();
         }
       }
 
